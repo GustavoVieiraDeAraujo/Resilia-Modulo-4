@@ -10,14 +10,14 @@ let propriedadeCSS = "iniciar"
 let listaPropriedadesCSS = []
 
 while (propriedadeCSS !== "Sair"){
-  propriedadeCSS = leitor.question('Digite uma propriedade CSS ou digite "Sair" para mostrar as propriedades ordenas de forma alfabetica e encerrar o programa: ')
+  propriedadeCSS = leitor.question('Digite uma propriedade CSS ou digite "Sair" para mostrar as propriedades ordenadas de forma alfabetica e encerrar o programa: ')
   const promissePropriedadeCSS = new Promise ((resolve,reject)=> {
     (propriedadeCSS !== "Sair") ? resolve(propriedadeCSS) : reject()
   })
   .then(resultadoPromisse => {
     listaPropriedadesCSS.push(resultadoPromisse)
   })
-  .catch(resultadoPromisse => {
+  .catch(() => {
     listaPropriedadesCSS.sort()
     console.log()
     console.log("Propriedades ordenadas de forma alfabetica")
