@@ -1,9 +1,3 @@
-// Necessario ter Node.js instalado;
-// Necessario instalar pacote 'readline-sync' do Node.js;
-// Para instalar o pacote rode o seguinte comando:
-// npm install readline-sync 
-
-
 import leitor from "readline-sync"
 
 let propriedadeCSS = "iniciar"
@@ -23,7 +17,7 @@ while (propriedadeCSS !== "Sair"){
     console.log("Propriedades ordenadas de forma alfabetica")
     console.log("↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ↓ ")
     for(let i = 0; i<listaPropriedadesCSS.length; i++){
-      console.log(""+listaPropriedadesCSS[i])
+      console.log(listaPropriedadesCSS[i])
     }
   })   
 }
